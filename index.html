@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UnlnviteD | Phone System</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/events.js"></script>
+
+</head>
+<body>
+   <!---lock screen--> 
+    <div class="container">
+
+        <div class="frame">
+
+
+
+            <img src="img/frame.png" alt="">
+            <div class="phone">
+                <div class="clock">
+                    10:00
+                </div>
+                <div class="statusbar"></div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="lock">
+                    <div class="lock-top">
+                        <div class="lockspace"></div>
+                        <div class="lock-icon">
+                            <img src="img/lock.png" alt="">
+                        </div>
+                        <div class="lock-clock">
+                            10:00
+                        </div>
+                        <div class="lock-date">
+                            Pazartesi, Eylül 16
+                        </div>
+                    </div>
+                    
+                    <div class="bottom-button">
+                    </div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--area of ​​applications-->
+                <div class="menu">
+                    <div class="menuspace"></div>
+                    <div class="menus">
+                        <div class="app" id="twitter">
+                            <img src="img/twitter.png" alt="">
+                            <p>Twitter</p>
+                        </div>
+                        <div class="app" id="darkchatb">
+                            <img src="img/darkmessage.png" alt="">
+                            <p>Dark Chat</p>
+                        </div>
+                        <div class="app" id="banka">
+                            <img src="img/banka.png" alt="">
+                            <p>Banka</p>
+                        </div>
+                        <div class="bottom-apps">
+                            <div class="app" id="telefon">
+                                <img src="img/phone.png" alt="">
+                                <p>Telefon</p>
+                            </div>
+                            <div class="app" id="rehber">
+                                <img src="img/rehber.png" alt="">
+                                <p>Rehber</p>
+                            </div>
+                            <div class="app" id="message">
+                                <img src="img/mesaj.png" alt="">
+                                <p>Mesajlar</p>
+                            </div>
+                            <div class="app" id="ayarlar">
+                                <img src="img/settings.png" alt="">
+                                <p>Ayarlar</p>
+                            </div>
+                        </div>
+                        <div class="bottom-button-m">
+                        </div>
+                    </div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--persons-->
+                <div class="rehber">
+                    <div class="rehberspace"></div>
+                    <div class="rehber-h1">
+                        <h1>Kişiler</h1>
+                    </div>
+                    <div class="add"></div>
+                    <div class="input-rehber">
+                    <input class="inputr" type="text" placeholder="   Ara">
+                    </div>
+                    <div class="mycontact">
+                        <div class="MyAvatar"></div>
+                        <div class="MyName">Ufuk Demir</div>
+                        <div class="MyNumber">+90 (589) 543 2341</div>
+                    </div>
+                    <div class="kisiler"></div>
+
+                    <div class="users">
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                        <div class="user">Ufuk Demir</div>
+                    </div>
+
+                    <div class="bottom-button-r">
+                    </div>
+
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="addRehber">
+
+                    <div class="addHeader">
+                        <div class="addback">
+                            Geri
+                        </div>
+                        <div class="addh">
+                            Yeni Kişi
+                        </div>
+                    </div>
+
+                    <div class="addBilgi">
+                        <div class="addPhoto">
+
+                        </div>
+                        <div class="addName">
+                            <input type="text" placeholder="Ad">
+                            <input type="text" placeholder="Soyad">
+                        </div>
+                    </div>
+
+                    <div class="addPhone">
+                        <input type="text" placeholder="Telefon Numarası">
+                    </div>
+
+                    <div class="addButton">
+                        <button>Ekle</button>
+                    </div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="Person">
+                    <div class="personheader">
+                        <div class="personback">
+                            Geri
+                        </div>
+
+                        <div class="persondelete">
+                            Sil
+                        </div>
+                    </div>
+
+                    <div class="personbilgi">
+                        <div class="personfoto"></div>
+                        <div class="personname">Rehber </div>
+                        <div class="personsellect">
+                            <div class="sellect"><img src="img/ara.png" alt=""></div>
+                            <div class="sellect"><img src="img/mesajat.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="personb">&nbsp;&nbsp; Telefon Numarası</div>
+                    <div class="personphone">+90 (530) 891 34 02</div>
+                </div>
+
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+
+                <div class="keypad">
+                    <div class="keyinput">
+                        <input type="text" class="inputkey">
+                    </div>
+                    <div class="keys">
+                        <div class="key" id="1">1</div>
+                        <div class="key" id="2">2</div>
+                        <div class="key" id="3">3</div>
+                        <div class="key" id="4">4</div>
+                        <div class="key" id="5">5</div>
+                        <div class="key" id="6">6</div>
+                        <div class="key" id="7">7</div>
+                        <div class="key" id="8">8</div>
+                        <div class="key" id="9">9</div>
+                        <div class="key" style="opacity: 0%;";>-</div>
+                        <div class="key" id="ara"></div>
+
+                    </div>
+
+                    <div class="bottom-button-k">
+                </div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="darkchat">
+                    <div class="darkheader">
+                        <div class="darkbaslik">
+                            Dark Chat
+                        </div>
+                        <div class="darkgizli">
+                            İnternet asla gizli değildir! 😈
+                        </div>
+                    </div>
+                    <div class="kutu">
+                            <div class="darkbox">
+                                <p>Bu sohbet +18'dir görüntülemek için lütfen yaşınızı doğrulayın.</p>
+                            </div>
+                            <div class="darkbox1">
+                                <p>Bu sohbet +18'dir görüntülemek için lütfen yaşınızı doğrulayın.</p>
+                            </div>
+                            <div class="darkbox">
+                                <p>Bu sohbet +18'dir görüntülemek için lütfen yaşınızı doğrulayın.</p>
+                            </div>
+                            <div class="darkbox">
+                                <p>Bu sohbet +18'dir görüntülemek için lütfen yaşınızı doğrulayın.</p>
+                            </div>
+                            <div class="darkbox">
+                                <p>Bu sohbet +18'dir görüntülemek için lütfen yaşınızı doğrulayın.</p>
+                            </div>
+                    </div>
+                    <div class="darkinput">
+                        <input type="text" placeholder="Gizli bir mesaj yaz :)">
+                        <button></button>
+                    </div>
+                    <div class="bottom-button-d"></div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="twitterapp">
+                    <div class="theader">
+                    </div>
+                    <div class="twitterMy">
+                        <div class="tMyFoto"></div>
+                        <div class="myname">Ufuk Demir</div>
+                        <div class="myusername">@unlnvitedevs</div>
+                    </div>
+                    <div class="text-button">
+                        <textarea name="" class="twitterbox" cols="30" rows="10" placeholder="Neler olup neler bitiyor?"></textarea>
+                        <button class="tweetle">Tweetle</button>
+                    </div>
+                    <div class="posts">
+                        <div class="post">
+                            <div class="tprofile">
+                                <div class="tphoto"></div>
+                                <div class="username-name"><p>Elon Musk <span>@elon_io</span></p></div>
+                            </div>
+                            <div class="tweettext">
+                                <p>Whether it’s stamp collectors in Andorra or petticoat aficionados in Lichtenstein, none can resist!</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="tprofile">
+                                <div class="tphoto"></div>
+                                <div class="username-name"><p>Bill Gates <span>@BillGates</span></p></div>
+                            </div>
+                            <div class="tweettext">
+                                <p>I’m thinking today about the frontline heroes who risked their lives for us on September 11th and those who continue to serve our country every day.</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="tprofile">
+                                <div class="tphoto"></div>
+                                <div class="username-name"><p>Jeff Bezos <span>@ahmet_cakar</span></p></div>
+                            </div>
+                            <div class="tweettext">
+                                <p>Amazon receives 10,000,000 orders per day.</p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="tprofile">
+                                <div class="tphoto"></div>
+                                <div class="username-name"><p>Hiko Reis <span>@hiko_baba_2001</span></p></div>
+                            </div>
+                            <div class="tweettext">
+                                <p>Tamam.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="bottom-button-t"></div>
+                </div>
+
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+
+                <div class="messageapp">
+                    <div class="mspace"></div>
+                    <div class="mheader">
+                        <div class="mh1">
+                            <h1>Mesaj Kutusu</h1>
+                        </div>
+                        <div class="gelenler">
+                            <div class="mesaj">
+                                <div class="mesajavatar"></div>
+                                <div class="mesajbilgi">
+                                    <h1>Hiko Baba</h1>
+                                    <p>20:00</p>
+                                </div>
+                                <div class="mesajicerik">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et quas ut molestiae qui eius veritatis, voluptas quam temporibus unde accusamus ratione odio aspernatur corporis quasi? In dolorem fugit quaerat?</p>
+                                </div>
+                            </div>
+                            <div class="mesaj">
+                                <div class="mesajavatar"></div>
+                                <div class="mesajbilgi">
+                                    <h1>Test</h1>
+                                    <p>22:00</p>
+                                </div>
+                                <div class="mesajicerik">
+                                    <p>Bu test yazısı</p>
+                                </div>
+                            </div>
+                            <div class="mesaj">
+                                <div class="mesajavatar"></div>
+                                <div class="mesajbilgi">
+                                    <h1>Hiko Baba</h1>
+                                    <p>20:00</p>
+                                </div>
+                                <div class="mesajicerik">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et quas ut molestiae qui eius veritatis, voluptas quam temporibus unde accusamus ratione odio aspernatur corporis quasi? In dolorem fugit quaerat?</p>
+                                </div>
+                            </div>
+                            <div class="mesaj">
+                                <div class="mesajavatar"></div>
+                                <div class="mesajbilgi">
+                                    <h1>Hiko Baba</h1>
+                                    <p>20:00</p>
+                                </div>
+                                <div class="mesajicerik">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate et quas ut molestiae qui eius veritatis, voluptas quam temporibus unde accusamus ratione odio aspernatur corporis quasi? In dolorem fugit quaerat?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-button-msg"></div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="aramaekrani">
+                    <div class="aramaspace"></div>
+                    <div class="aramabilgi">
+                        <div class="aramafoto"></div>
+                        <div class="aramadurum">
+                            Çağrı Yapılıyor...
+                        </div>
+                        <div class="aramaad">
+                            Hiko Baba
+                        </div>
+                    </div>
+                    <div class="declinecall"></div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="konusmaekran">
+                    <div class="konusmaspace"></div>
+                    <div class="konusmabilgi">
+                        <div class="konusmaisim">Hiko Baba</div>
+                        <div class="konusmatimer">00:01</div>
+                    </div>
+                    <div class="declinecall"></div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="settingsapp">
+                    <div class="settingsspace"></div>
+                    <div class="settingsheader">
+                        Ayarlar
+                    </div>
+                    <div class="ayarlar">
+                        <div class="ayar">
+                            <div class="ayarh" style="color: gold;">Erişebilirlik</div>
+                        </div>
+                        <div class="ayar">
+                            <div class="ayarh">Telefon Model</div>
+                            <div class="ayar2">İphone 13 Mini</div>
+                        </div>
+                        <div class="ayar">
+                            <div class="ayarh">Yazılım Sürümü</div>
+                            <div class="ayar2">IOS 16</div>
+                        </div>
+                        <div class="ayar">
+                            <div class="ayarh">Parlaklık</div>
+                            <div class="ayar2">%0</div>
+                        </div>
+
+                        <div class="ayar">
+                            <div class="ayarh">Wifi</div>
+                            <div class="ayar2">Açık</div>
+                        </div>
+                        <div class="ayar">
+                            <div class="ayarh">Bluetooth</div>
+                            <div class="ayar2">Açık</div>
+                        </div>
+                        <div class="ayar">
+                            <div class="ayarh">AirDrop</div>
+                            <div class="ayar2">Herkes</div>
+                        </div>
+                        <div class="ayar">
+                            <div class="ayarh">Uçak Modu</div>
+                            <div class="ayar2">Kapalı</div>
+                        </div>
+                    </div>
+                    <div class="bottom-button-set"></div>
+                </div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+                <div class="bankapp">
+                    <div class="bankspace">
+                        <div class="banktext">Fleeca Bank</div>
+                    </div>
+                    <div class="bankheader">
+                        <div class="bankcard">
+                            <div class="bankcard-h1">
+                                FleeCa
+                            </div>
+                            <div class="tutar"><span>$</span> 1000</div>
+                            <div class="bankisim">Luciano Albania</div>
+                            <div class="bankchip"></div>
+                            <div class="mastercard"></div>
+                        </div>
+                    </div>
+                    <div class="bankayar">
+                        <div class="paragonder">
+                            <input type="text" placeholder="Para göndereceğin kişi">
+                            <input type="text" placeholder="Göndereceğin para miktarı">
+                            <button class="gonderbutton">Para Gönder</button>
+                        </div>
+                    </div>
+                    <div class="bottom-button-banka"></div>
+                </div>
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+                <div class="mesajgonderapp">
+                    <div class="mesajheader">
+                        <div class="mesajbaslik">
+                            Focus
+                        </div>
+                    </div>
+                    <div class="kutu1">
+                            <div class="mesaj1">
+                                <p>sistem test edildi mi?</p>
+                            </div>
+                            <div class="mesaj2">
+                                <p>ediliyor.</p>
+                            </div>
+                            <div class="mesaj1">
+                                <p>edildi mi?</p>
+                            </div>
+                            <div class="mesaj2">
+                                <p>edildi.</p>
+                            </div>
+                    </div>
+                    <div class="mesajinput">
+                        <input type="text" placeholder="Bir mesaj gönder">
+                        <button></button>
+                    </div>
+                    <div class="bottom-button-msgs"></div>
+                </div>
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
